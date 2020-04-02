@@ -1,0 +1,31 @@
+作业一：
+
+1）基于SpringBoot整合SSS框架（即整合第一阶段模块三作业第二题内容，含有登录拦截验证）
+
+2）在 1 的基础上开发SpringSession进行Session一致性控制
+
+3）将工程打成war包
+
+4）将war包部署到分布式集群架构中，要求一个Nginx节点，两个Tomcat节点
+
+      —> Nginx（轮询策略） —> Tomcat1—> Tomcat2
+
+5）完成测试
+
+注意：作业提交时提交可运行的工程代码（源代码和war包）以及sql脚本，nginx配置及tomcat配置，redis配置统一修改为：
+
+redis.host=localhost
+
+redis.port=6379
+
+redis.connectionTimeout=5000
+
+redis.password=
+
+redis.database=0
+
+
+
+作业二：
+
+请描述你对分布式调度的理解（结合Elastic-Job-lite图文并茂描述）

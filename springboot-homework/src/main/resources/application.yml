@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  thymeleaf:
+    cache: false
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5
+    prefix: classpath:/templates/
+
+  datasource:
+    url: jdbc:mysql://62.234.121.17:3306/blog_system?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: Wjdh84928399**
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: validate
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+  redis:
+    database: 0
+    host: 62.234.121.17
+    port: 6379
